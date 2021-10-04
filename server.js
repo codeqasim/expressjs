@@ -16,5 +16,13 @@ app.get('/about', function(req, res) {
   res.render('pages/about');
 });
 
+
+// about page
+app.get('/contact', function(req, res) {
+
+  res.render('pages/about')
+
+});
+
 app.listen(8000);
 console.log('Server is listening on port 8080');
