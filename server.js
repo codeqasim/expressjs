@@ -26,7 +26,7 @@ app.get('/contact', function(req, res) {
 
 app.listen(8080);
 
-const hostname = '127.0.0.1';
+const hostname = '139.162.34.201';
 const port = 8080;
 
 app.listen(port, hostname, () => {
