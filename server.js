@@ -1,5 +1,7 @@
+var compression = require('compression')
 var express = require('express');
 var app = express();
+app.use(compression())
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -16,7 +18,6 @@ app.get('/about', function(req, res) {
   res.render('pages/about');
 });
 
-
 // about page
 app.get('/contact', function(req, res) {
 
@@ -24,10 +25,10 @@ app.get('/contact', function(req, res) {
 
 });
 
-app.listen(8080);
+// app.listen(8080);
 
 const hostname = '139.162.34.201';
-const port = 8000;
+const port = 1000;
 
 app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
