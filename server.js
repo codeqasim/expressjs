@@ -1,7 +1,10 @@
 var compression = require('compression')
 var express = require('express');
+var minify = require('express-minify');
 var app = express();
-app.use(compression())
+app.use(compression());
+app.use(minify());
+app.use(express.static(__dirname + '/static'));
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
