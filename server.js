@@ -26,4 +26,9 @@ app.get('/contact', function(req, res) {
 
 app.listen(8080);
 
-console.log('Server is listening on port 8000');
+const hostname = '127.0.0.1';
+const port = 8080;
+
+app.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
