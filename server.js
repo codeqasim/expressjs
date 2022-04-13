@@ -24,5 +24,5 @@ app.get('/contact', function(req, res) {
 
 });
 
-app.listen(8000);
+app.listen(80);
 console.log('Server is listening on port 8080');
